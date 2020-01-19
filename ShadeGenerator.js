@@ -21,10 +21,20 @@ const shade= function shade(color, weight = 0.5)
     let u = mix(t, [0, 0, 0], weight);
 
     return u;
-}
+};
+
+
+const tint = function tine(color , wieght){
+    let t = color;
+    
+    let u = mix(t,[255,255,255],wieght);
+
+    return u;
+};
 
 
 module.exports = {
+    tint,
     mix,
     shade
 };
