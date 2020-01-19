@@ -32,8 +32,17 @@ const tint = function tine(color , wieght){
     return u;
 };
 
+const tone = function tone(color,wieght){
+    let t = color;
+    
+    let u = mix(t,[128,128,128],wieght);
+
+    return u;
+};
+
 
 module.exports = {
+    tone,
     tint,
     mix,
     shade
